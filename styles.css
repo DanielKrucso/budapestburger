@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: "Salsa";
+    color: rgb(0, 0, 0);
+}
+/*videóban 48 percnél box sizing-et magyarazza */
+
+html, body{
+    margin: 0px;
+    padding: 0px;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+
+  
+.navbar {
+  background-color: #FF9F45;
+  padding: 10px 0px;
+}
+
+  .list {
+    list-style-type: none;
+    padding: 10;
+    margin: 10;
+    text-align:center;
+    
+  }
+
+
+
+  .list-item {
+    display: inline-block;
+    font-size: 20px;
+    padding: 0 35px;
+    
+  }
+
+ 
+
+
+/*hero*/
+  .hero-image {
+    background-image: url(Images/background.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 100vh;
+    opacity: 95%;
+  }
+  @media (max-width: 800px) {
+    .hero-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+    opacity: 95%;
+    }
+
+  }
+
+  .hero-box {
+    /*border: 5px solid #fff;*/
+    position: relative;
+    bottom: 200px;
+    right: 400px;
+    transform: rotate(-20deg);
+  }
+
+  .hero-box-2 {
+    position: relative;
+    bottom: 0;
+    right: 575px;
+    transform: rotate(-20deg);
+    z-index: 1;
+  }
+
+  .restaurant-logo {
+
+  }
+
+  .address-logo {
+    width: 300px;
+    height: 300px;
+  }
+
+  a {
+    color: #fff;
+  }
+
+/*booking button*/
+
+
+
+
+
+/*section-1*/
+  .section-1 {
+    background-color: #f1f1f1;
+    font-size: 30px;
+    
+  }
+
+  @media (max-width: 800px) {
+    .section-1 {
+      flex-direction: column;
+    }
+
+  }
+
+.restaurant {
+  background-image: url(Images/restaurant.jpg);
+  background-size: cover;
+  overflow: hidden;
+  height: auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.restaurant-box {
+  
+  height: auto;
+  opacity: 100%;
+  padding: 10px;
+  background-color: rgba(0,0,0,.55);
+}
+
+.chef-1-image {
+  float:left;
+  border-radius: 50%;
+}
+
+span {
+  color: #f1f1f1;
+}
+
+.welcome-hr-1 {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(211, 192, 192, 0), rgba(248, 248, 248, 0.75), rgba(0, 0, 0, 0));
+}
+
+.welcome-hr-2 {
+  border: 0;
+  height: 3px;
+  background-image: linear-gradient(to right, rgba(211, 192, 192, 0), rgba(248, 248, 248, 0.75), rgba(0, 0, 0, 0));
+}
+
+.welcome {
+color: #fff;
+text-align: center;
+font-size: 100px;
+}
+
+@media (max-width: 800px) {
+  .welcome {
+    font-size: 70px;
+  }
+}
+
+
+.welcome-second {
+  color: #fff;
+  text-align: center;
+  font-size: 60px;
+  }
+
+  @media (max-width: 800px) {
+    .welcome-second {
+      font-size: 40px;
+    }
+  }
+
+
+.restaurant-pictures {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 3px;
+}
+
+.restaurant-picture-1, .restaurant-picture-2, .restaurant-picture-3 {
+  display: inline-block;
+  width: 400px;
+  height:550px;
+  border: solid 5px;
+  border-color: #fff;
+  background: black;
+  color: white;
+  padding: 1rem;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 800px) {
+  .restaurant-picture-1, .restaurant-picture-2, .restaurant-picture-3 {
+    margin: 30px;
+    width: 350px;
+    height:450px;
+  }
+}
+
+.restaurant-picture-1:hover, .restaurant-picture-2:hover, .restaurant-picture-3:hover {
+  transform: scale(1.1) ;
+  transition: all 0.5s ease;
+  border-color: linear
+
+
+}
+
+.restaurant-options {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/*section-2*/
+
+
+.hatter-2 {
+  background-image: url(Images/fries.jpg);
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100vh;
+  opacity: 95%;
+}
